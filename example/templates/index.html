@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>KI4UJY Weather Hat Web Page</title>
+</head>
+<body>
+    <h1>Raspberry Pi Weather Page </h1>
+    
+    <h2>Offset Pressure Reference</h2>
+        <ul>
+            <li> See Level 1013.25 millibar</li>
+            <li> elevation 1,000 ft: 977.166 millibar</li>
+            <li> elevation 1,059 ft: 981.510 millibar (Tullahoma TN) </li>
+            <li> elevation 2,000 ft: 942.129 millibar</li>
+            <li> elevation 3,000 ft: 908.117 millibar</li>
+            <li> elevation 4,000 ft: 875.105 millibar</li>
+            <li> elevation 5,000 ft: 843.073 millibar</li>
+            <li> elevation 10,000 ft: 696.817 millibar</li>
+        </ul>
+    <h2>Live Data</h2>
+    <div id="output">Waiting for data...</div>
+    
+    <script>
+        const eventSource = new EventSource("/stream");
+
+        eventSource.onmessage = function(event) {
+            document.getElementById("output").innerText = event.data;
+        };
+    </script>
+    <form action="/offset" method="post">
+        <input autocomplete="on" autofocus name="Offset" placeholder="Altitude correction Pressure" type="text">
+              
+        <button type="submit">Update</button>
+    </form>
+    
+</body>
+</html>
