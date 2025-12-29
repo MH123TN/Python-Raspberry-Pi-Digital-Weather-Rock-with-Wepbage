@@ -41,7 +41,7 @@ The 2022 version requires a local pressure offset (hard coded )to be entered to 
 The local pressure is adjustable via an altitude correction in Millibar
 
 
-### CS50 Upgrade (Version 3)
+### Webpage Upgrade (Version 3)
 
 Version 3 modified in December 2025 with the intent to provide the following enhanced features via a locally hosted webpage:
 
@@ -56,7 +56,7 @@ Version 3 modified in December 2025 with the intent to provide the following enh
 
 #### Negatives:
 
-*web page must be up for version to run (resolving this is outside the scope of this coarse)
+*web page must be up for version to run (resolving this is outside the scope of this vesion)
 *Raspberry Pi security doesn't allow webservice outside of the raspberry pi itself - narly..
 
 #### File Structure
