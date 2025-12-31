@@ -58,6 +58,7 @@ Version 3 modified in December 2025 with the intent to provide the following enh
 
 *web page must be up for version to run (resolving this is outside the scope of this vesion)
 *Raspberry Pi security doesn't allow webservice outside of the raspberry pi itself - narly..
+*Updated now allows local network monitoring with a slight tweek
 
 #### File Structure
 
